@@ -6,8 +6,16 @@ import pinterest from "./starter/assets/shared/desktop/icon-pinterest.svg";
 import twitter from "./starter/assets/shared/desktop/icon-twitter.svg";
 import youtube from "./starter/assets/shared/desktop/icon-youtube.svg";
 import circles from "./starter/assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg";
+import { useMediaQuery } from "react-responsive";
 import "./Footer.scss";
 export default function Footer() {
+  const isMobile = useMediaQuery({
+    query: "(max-device-width: 600px)",
+  });
+  const isTabletOrDesktop = useMediaQuery({
+    query: "(min-device-width:600px)",
+  });
+
   return (
     <div className="Footer">
       <div className="Footer-contact">
@@ -20,13 +28,30 @@ export default function Footer() {
         <button>Get in Touch</button>
       </div>
       <div className="Footer-content">
-        <img src={logoLight} alt="" />
-        <hr />
-        <ul>
-          <li>Our Company</li>
-          <li>Locations</li>
-          <li>Contact</li>
-        </ul>
+        {isMobile && (
+          <>
+            <img src={logoLight} alt="" />
+            <hr />
+            <ul>
+              <li>Our Company</li>
+              <li>Locations</li>
+              <li>Contact</li>
+            </ul>{" "}
+          </>
+        )}
+        {isTabletOrDesktop && (
+          <>
+            {" "}
+            <img src={logoLight} alt="" />
+            <ul>
+              <li>Our Company</li>
+              <li>Locations</li>
+              <li>Contact</li>
+            </ul>
+            <hr />
+          </>
+        )}
+
         <p>
           <span className="office">Designo Central Office</span> <br />
           3886 Wellington Street <br />
