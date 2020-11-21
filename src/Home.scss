@@ -1,0 +1,44 @@
+@import "./variables";
+
+.Home-landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 24px 0;
+  background-color: $primaryColor;
+  color: $white;
+  h2 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin: 0 0 14px;
+    line-height: 1.13;
+  }
+  p {
+    font-weight: normal;
+    line-height: 1.67;
+    margin: 14px 0 0;
+  }
+  button {
+    width: 15.2rem;
+    height: 5.6rem;
+    margin: 24px 87px 0 88px;
+    // padding: 18px 25px 16px 24px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-family: $fontStack;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: $white;
+    color: $black;
+  }
+  img {
+    width: 284px;
+    height: 371px;
+    margin: 80px 21px 0 22px;
+    object-fit: contain;
+  }
+}

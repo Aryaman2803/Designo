@@ -1,0 +1,10 @@
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 24px 34px;
+  img {
+    width: 20rem;
+    object-fit: contain;
+  }
+}
