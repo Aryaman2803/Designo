@@ -36,9 +36,25 @@ export default function Home() {
         </svg>
       </section>
       <section className="Home-projects">
-        <div className="project">
+        <div className="project" id="web-design">
           <div className="transparent-dark">
             <h3>Web Design</h3>
+            <p>
+              View Projects<i class="fas fa-chevron-right"></i>
+            </p>
+          </div>
+        </div>
+        <div className="project" id="app-design">
+          <div className="transparent-dark">
+            <h3>App Design</h3>
+            <p>
+              View Projects<i class="fas fa-chevron-right"></i>
+            </p>
+          </div>
+        </div>
+        <div className="project" id="graphic-design">
+          <div className="transparent-dark">
+            <h3>Graphic Design</h3>
             <p>
               View Projects<i class="fas fa-chevron-right"></i>
             </p>
