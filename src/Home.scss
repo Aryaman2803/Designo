@@ -6,9 +6,12 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 80px 24px 0;
+  padding: 80px 24px 45rem;
   background-color: $primaryColor;
   color: $white;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
   h2 {
     font-size: 3.2rem;
     font-weight: 500;
@@ -24,7 +27,6 @@
     width: 15.2rem;
     height: 5.6rem;
     margin: 24px 87px 0 88px;
-    // padding: 18px 25px 16px 24px;
     border-radius: 8px;
     border: none;
     font-size: 1.6rem;
@@ -35,10 +37,13 @@
     background-color: $white;
     color: $black;
   }
+
   img {
-    width: 284px;
-    height: 371px;
-    margin: 80px 21px 0 22px;
+    min-width: 100%;
+    height: auto;
     object-fit: contain;
+    position: absolute;
+    top: 37%;
+    transform: translateX(-50%);
   }
 }

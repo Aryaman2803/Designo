@@ -14,7 +14,9 @@ export default function Home() {
           Find out more about our services.
         </p>
         <button>Learn More</button>
-        <img src={phoneImage} alt="" />
+        <div className="Home-img-wrap">
+          <img src={phoneImage} alt="" />
+        </div>
       </section>
     </div>
   );
