@@ -1,7 +1,9 @@
 import React from "react";
 import NavBar from "./NavBar";
 import phoneImage from "./starter/assets/home/desktop/image-hero-phone.png";
+import passionate from "./starter/assets/home/desktop/illustration-passionate.svg";
 import "./Home.scss";
+import Project from "./Project";
 export default function Home() {
   return (
     <div className="Home">
@@ -36,29 +38,43 @@ export default function Home() {
         </svg>
       </section>
       <section className="Home-projects">
-        <div className="project" id="web-design">
-          <div className="transparent-dark">
-            <h3>Web Design</h3>
-            <p>
-              View Projects<i class="fas fa-chevron-right"></i>
-            </p>
+        <Project name="Web Design" id="web-design" />
+        <Project name="App Design" id="app-design" />
+        <Project name="Graphic Design" id="graphic-design" />
+      </section>
+      <section className="Home-values">
+        <div className="value">
+          <div className="img-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="202" height="202">
+              <defs>
+                <linearGradient id="a" x1="0%" x2="100%" y1="50%" y2="50%">
+                  <stop offset="0%" stop-color="#5D0202" stop-opacity="0" />
+                  <stop
+                    offset="100%"
+                    stop-color="#5D0202"
+                    stop-opacity=".498"
+                  />
+                </linearGradient>
+              </defs>
+              <circle
+                cx="101"
+                cy="101"
+                r="101"
+                fill="url(#a)"
+                fill-rule="evenodd"
+                opacity=".203"
+                transform="matrix(-1 0 0 1 202 0)"
+              />
+            </svg>
+            <img src={passionate} alt="" />
           </div>
-        </div>
-        <div className="project" id="app-design">
-          <div className="transparent-dark">
-            <h3>App Design</h3>
-            <p>
-              View Projects<i class="fas fa-chevron-right"></i>
-            </p>
-          </div>
-        </div>
-        <div className="project" id="graphic-design">
-          <div className="transparent-dark">
-            <h3>Graphic Design</h3>
-            <p>
-              View Projects<i class="fas fa-chevron-right"></i>
-            </p>
-          </div>
+
+          <h3>Passionate</h3>
+          <p>
+            Each project starts with an in-depth brand research to ensure we
+            only create products that serve a purpose. We merge art, design, and
+            technology into exciting new solutions.
+          </p>
         </div>
       </section>
     </div>
