@@ -6,6 +6,7 @@ import resourceful from "./starter/assets/home/desktop/illustration-resourceful.
 import friendly from "./starter/assets/home/desktop/illustration-friendly.svg";
 import "./Home.scss";
 import Project from "./Project";
+import Footer from "./Footer";
 export default function Home() {
   return (
     <div className="Home">
@@ -145,6 +146,7 @@ export default function Home() {
           </p>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }
