@@ -41,32 +41,36 @@ export default function Footer() {
         )}
         {isTabletOrDesktop && (
           <>
-            {" "}
-            <img src={logoLight} alt="" />
-            <ul>
-              <li>Our Company</li>
-              <li>Locations</li>
-              <li>Contact</li>
-            </ul>
+            <div className="footer-nav">
+              <img src={logoLight} alt="" />
+              <ul>
+                <li>Our Company</li>
+                <li>Locations</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+
             <hr />
           </>
         )}
-
-        <p>
-          <span className="office">Designo Central Office</span> <br />
-          3886 Wellington Street <br />
-          Toronto, Ontario M9C 3J5
-        </p>
-        <p>
-          <span className="office">Contact Us (Central Office)</span> <br />
-          P : +1 253-863-8967 <br />M : contact@designo.co
-        </p>
-        <div className="icons-container">
-          <img src={facebook} alt="" />
-          <img src={youtube} alt="" />
-          <img src={twitter} alt="" />
-          <img src={pinterest} alt="" />
-          <img src={instagram} alt="" />
+        <div className="location-wrap">
+          {" "}
+          <p>
+            <span className="office">Designo Central Office</span> <br />
+            3886 Wellington Street <br />
+            Toronto, Ontario M9C 3J5
+          </p>
+          <p>
+            <span className="office">Contact Us (Central Office)</span> <br />
+            P : +1 253-863-8967 <br />M : contact@designo.co
+          </p>
+          <div className="icons-container">
+            <img src={facebook} alt="" />
+            <img src={youtube} alt="" />
+            <img src={twitter} alt="" />
+            <img src={pinterest} alt="" />
+            <img src={instagram} alt="" />
+          </div>
         </div>
       </div>
     </div>

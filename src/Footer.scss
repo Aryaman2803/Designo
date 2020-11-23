@@ -58,6 +58,7 @@
     transform: translateX(-70%) scale(1, -1);
     width: 70rem;
     z-index: -1;
+    object-fit: contain;
   }
 }
 
@@ -112,6 +113,57 @@
       width: 2.5rem;
       object-fit: contain;
       margin-right: 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .Footer-contact {
+    width: 69rem;
+    margin: 0 39px 337px;
+    top: -35%;
+
+    h2 {
+      font-size: 4rem;
+    }
+
+    p {
+      width: 57.3rem;
+    }
+
+    img {
+      top: -50%;
+      transform: translateX(-70%) scale(1, -1);
+      width: 100rem;
+    }
+  }
+
+  .Footer-content {
+    .footer-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: -10rem;
+      padding-bottom: 3.2rem;
+      ul {
+        flex-direction: row;
+        li {
+          padding-right: 3rem;
+        }
+      }
+      img {
+        margin: 0;
+      }
+    }
+
+    .location-wrap {
+      padding-top: 2rem;
+      display: flex;
+      align-items: center;
+
+      * {
+        margin-right: 2rem;
+      }
     }
   }
 }
