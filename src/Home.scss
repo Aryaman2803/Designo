@@ -158,4 +158,16 @@
       background: url("./starter/assets/home/tablet/image-graphic-design.jpg");
     }
   }
+
+  .Home-values {
+    .value {
+      display: flex;
+
+      .value-text-wrap {
+        text-align: left;
+        width: 43.9rem;
+        margin-left: 4.7rem;
+      }
+    }
+  }
 }

@@ -71,13 +71,14 @@ export default function Home() {
             </svg>
             <img src={passionate} alt="" />
           </div>
-
-          <h3>Passionate</h3>
-          <p>
-            Each project starts with an in-depth brand research to ensure we
-            only create products that serve a purpose. We merge art, design, and
-            technology into exciting new solutions.
-          </p>
+          <div className="value-text-wrap">
+            <h3>Passionate</h3>
+            <p>
+              Each project starts with an in-depth brand research to ensure we
+              only create products that serve a purpose. We merge art, design,
+              and technology into exciting new solutions.
+            </p>
+          </div>
         </div>
         <div className="value">
           <div className="img-container">
@@ -105,12 +106,14 @@ export default function Home() {
             <img src={resourceful} alt="" />
           </div>
 
-          <h3>Resourceful</h3>
-          <p>
-            Everything that we do has a strategic purpose. We use an agile
-            approach in all of our projects and value customer collaboration. It
-            guarantees superior results that fulfill our clients’ needs.
-          </p>
+          <div className="value-text-wrap">
+            <h3>Resourceful</h3>
+            <p>
+              Everything that we do has a strategic purpose. We use an agile
+              approach in all of our projects and value customer collaboration.
+              It guarantees superior results that fulfill our clients’ needs.
+            </p>
+          </div>
         </div>
         <div className="value">
           <div className="img-container">
@@ -138,12 +141,14 @@ export default function Home() {
             <img src={friendly} alt="" />
           </div>
 
-          <h3>Friendly</h3>
-          <p>
-            We are a group of enthusiastic folks who know how to put people
-            first. Our success depends on our customers, and we strive to give
-            them the best experience a company can provide.
-          </p>
+          <div className="value-text-wrap">
+            <h3>Friendly</h3>
+            <p>
+              We are a group of enthusiastic folks who know how to put people
+              first. Our success depends on our customers, and we strive to give
+              them the best experience a company can provide.
+            </p>
+          </div>
         </div>
       </section>
       <Footer />
