@@ -1,9 +1,10 @@
 import React from "react";
+import "./Project.scss";
 
 export default function Project(props) {
   return (
     <div>
-      <div className="project" id={props.id}>
+      <div className="Project" id={props.id}>
         <div className="transparent-dark">
           <h3>{props.name}</h3>
           <p>
