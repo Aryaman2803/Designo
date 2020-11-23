@@ -1,3 +1,5 @@
+@import "./variables";
+
 .Navbar {
   display: flex;
   align-items: center;
@@ -6,5 +8,21 @@
   img {
     width: 20rem;
     object-fit: contain;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .Navbar {
+    ul {
+      list-style: none;
+      li {
+        display: inline-block;
+        text-transform: uppercase;
+        line-height: 1;
+        letter-spacing: 2px;
+        margin: 0 22px 0 0;
+        font-weight: normal;
+      }
+    }
   }
 }

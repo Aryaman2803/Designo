@@ -4,10 +4,10 @@ import { useMediaQuery } from "react-responsive";
 import "./Navbar.scss";
 export default function NavBar() {
   const isMobile = useMediaQuery({
-    query: "(max-device-width: 599px)",
+    query: "(max-device-width: 767px)",
   });
   const isTabletOrDesktop = useMediaQuery({
-    query: "(min-device-width:600px)",
+    query: "(min-device-width:768px)",
   });
 
   return (
@@ -25,7 +25,7 @@ export default function NavBar() {
           <ul>
             <li>Our Company</li>
             <li>Locations</li>
-            <li></li>
+            <li>Contact</li>
           </ul>
         </>
       )}

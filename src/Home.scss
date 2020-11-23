@@ -172,3 +172,42 @@
     }
   }
 }
+
+@media screen and (min-width: $tablet) {
+  .Home-landing {
+    width: 689px;
+    height: 843px;
+    // display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+
+    h2 {
+      font-size: 4.8rem;
+      margin: 0 0 8px;
+      width: 57.3rem;
+    }
+
+    p {
+      margin: 8px 69px 19px 59px;
+    }
+
+    button {
+      margin: 19px 210px 0 211px;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+
+    img {
+      min-width: 20%;
+      top: 37%;
+    }
+  }
+
+  .project {
+    width: 689px;
+    height: 200px;
+    margin: 0 0 24px;
+    padding: 53px 210px 53px 211px;
+    object-fit: contain;
+  }
+}
