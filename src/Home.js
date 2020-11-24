@@ -9,6 +9,8 @@ import { useMediaQuery } from "react-responsive";
 import "./Home.scss";
 import Project from "./Project";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
+
 export default function Home() {
   const isDesktop = useMediaQuery({
     query: "(min-device-width: 1220px)",
