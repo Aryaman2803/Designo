@@ -167,3 +167,43 @@
     }
   }
 }
+
+@media screen and (min-width: $desktop) {
+  .Footer-contact {
+    width: 110rem;
+
+    .contact-text-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      div {
+        text-align: left;
+        margin-left: 5rem;
+
+        h2 {
+          width: 268px;
+        }
+
+        p {
+          width: 459px;
+        }
+      }
+    }
+
+    img {
+      top: -50%;
+      transform: translateX(-90%) scale(1, -1);
+      width: 90rem;
+    }
+  }
+
+  .footer-nav {
+    width: 110rem;
+    margin: 0 auto;
+  }
+
+  .location-wrap {
+    justify-content: space-evenly;
+  }
+}

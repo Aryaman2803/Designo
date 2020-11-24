@@ -20,12 +20,17 @@ export default function Footer() {
     <div className="Footer">
       <div className="Footer-contact">
         <img src={circles} alt="circles" />
-        <h2>Let's talk about your project</h2>
-        <p>
-          Ready to take it to the next level? Contact us today and find out how
-          our expertise can help your business grow.
-        </p>
-        <button>Get in Touch</button>
+        <div className="contact-text-wrap">
+          <div className="div">
+            <h2>Let's talk about your project</h2>
+            <p>
+              Ready to take it to the next level? Contact us today and find out
+              how our expertise can help your business grow.
+            </p>
+          </div>
+
+          <button>Get in Touch</button>
+        </div>
       </div>
       <div className="Footer-content">
         {isMobile && (
