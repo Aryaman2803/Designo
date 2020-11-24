@@ -4,13 +4,25 @@ import phoneImage from "./starter/assets/home/desktop/image-hero-phone.png";
 import passionate from "./starter/assets/home/desktop/illustration-passionate.svg";
 import resourceful from "./starter/assets/home/desktop/illustration-resourceful.svg";
 import friendly from "./starter/assets/home/desktop/illustration-friendly.svg";
+import leaf from "./starter/assets/shared/desktop/bg-pattern-leaf.svg";
+import { useMediaQuery } from "react-responsive";
 import "./Home.scss";
 import Project from "./Project";
 import Footer from "./Footer";
 export default function Home() {
+  const isDesktop = useMediaQuery({
+    query: "(min-device-width: 1220px)",
+  });
   return (
     <div className="Home">
       <NavBar />
+      {isDesktop && (
+        <>
+          <img src={leaf} alt="" id="leaf1" />{" "}
+          <img src={leaf} alt="" id="leaf2" />
+        </>
+      )}
+
       <section className="Home-landing">
         <div className="landing-wrap">
           <h2>Award-winning custom designs and digital branding solutions</h2>
