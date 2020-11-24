@@ -172,7 +172,7 @@
 
       .value-text-wrap {
         text-align: left;
-        width: 43.9rem;
+        // width: 43.9rem;
         margin-left: 4.7rem;
       }
     }
@@ -247,6 +247,26 @@
       background: url("./starter/assets/home/desktop/image-app-design.jpg");
       background-size: 100% 100%;
       background-repeat: no-repeat;
+    }
+  }
+
+  .Home-values {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 12rem;
+    .value {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      width: 30%;
+
+      .value-text-wrap {
+        text-align: center;
+      }
     }
   }
 }
