@@ -1,0 +1,24 @@
+@import "./Home.scss";
+
+.WebDesign {
+  .hero {
+    @extend .Home-landing;
+    padding: 105px 24px;
+
+    h2 {
+      font-size: 3.2rem;
+    }
+
+    p {
+      margin: 24px 0 0;
+    }
+
+    img {
+      position: absolute;
+      top: -20%;
+      transform: translateX(5%) rotate(180deg);
+      z-index: -2;
+      width: 40rem;
+    }
+  }
+}
