@@ -70,7 +70,7 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background: url("./starter/assets/home/tablet/image-web-design.jpg");
-
+    height: 100%;
     h3 {
       font-size: 40px;
       font-weight: 500;
@@ -87,6 +87,19 @@
       font-style: normal;
       line-height: normal;
       letter-spacing: 5px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .Project {
+    width: 541px;
+    padding: 107px 143px 107px 144px;
+    background: url("./starter/assets/home/desktop/image-web-design-large.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    h3 {
+      font-size: 4rem;
     }
   }
 }
