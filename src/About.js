@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "./NavBar";
 import heroImage from "./starter/assets/about/mobile/image-about-hero.jpg";
+import heroSvg from "./starter/assets/about/mobile/bg-pattern-hero-about-mobile.svg";
 import "./About.scss";
 
 export default function About() {
@@ -12,6 +13,7 @@ export default function About() {
           <img src={heroImage} alt="" />
         </div>
         <div className="hero-text">
+          <img src={heroSvg} alt="" />
           <h2>About Us</h2>
           <p>
             Founded in 2010, we are a creative agency that produces lasting
