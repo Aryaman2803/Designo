@@ -79,3 +79,25 @@
     }
   }
 }
+
+@media screen and (min-width: $desktop) {
+  .Card {
+    flex-direction: column;
+    width: 350px;
+    height: 478px;
+    // margin: 0 30px 32px 0;
+    // padding: 0 0 32px;
+
+    .text-wrap {
+      width: 100%;
+      border-radius: 0 0 15px 15px;
+    }
+
+    img {
+      border-radius: 15px 15px 0 0;
+      margin: 0;
+      width: 350px;
+      height: 320px;
+    }
+  }
+}

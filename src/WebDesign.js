@@ -22,11 +22,14 @@ export default function WebDesign() {
     <div className="WebDesign">
       <NavBar />
       <section className="hero">
-        <h2> Web Design</h2>
-        <p>
-          We build websites that serve as powerful marketing tools and bring
-          memorable brand experiences.
-        </p>
+        <div className="hero-text">
+          <h2> Web Design</h2>
+          <p>
+            We build websites that serve as powerful marketing tools and bring
+            memorable brand experiences.
+          </p>
+        </div>
+
         <img src={isTabletOrDesktop ? multipleCircles : headerCircle} alt="" />
       </section>
       <section className="projects">
@@ -43,7 +46,7 @@ export default function WebDesign() {
         <Card
           image={photon}
           title="Photon"
-          text="Site for low-cost money A state-of-the-art music player with high-resolution audio and DSP effects "
+          text="Site for low-cost money A state-of-the-art music player with high-resolution audio "
         />
         <Card
           image={builder}
