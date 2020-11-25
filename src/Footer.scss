@@ -50,6 +50,13 @@
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 1px;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $secondaryColor;
+      color: $white;
+    }
   }
 
   img {
@@ -87,6 +94,7 @@
       font-weight: normal;
       padding-bottom: 3rem;
       text-transform: uppercase;
+      cursor: pointer;
     }
   }
 
@@ -113,6 +121,7 @@
       width: 2.5rem;
       object-fit: contain;
       margin-right: 2rem;
+      cursor: pointer;
     }
   }
 }

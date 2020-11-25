@@ -7,7 +7,12 @@ export default function Project(props) {
     <div className="Project" id={props.id}>
       <div className="transparent-dark">
         <h3>
-          <Link to={props.id}>{props.name}</Link>
+          <Link
+            to={props.id}
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            {props.name}
+          </Link>
         </h3>
         <p>
           View Projects<i class="fas fa-chevron-right"></i>

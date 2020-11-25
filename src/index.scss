@@ -31,3 +31,11 @@ h2 {
 h3 {
   font-size: 2rem;
 }
+
+.Link {
+  text-decoration: none;
+  color: $black;
+  &:hover {
+    color: $white;
+  }
+}

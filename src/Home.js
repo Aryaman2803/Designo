@@ -27,7 +27,11 @@ export default function Home() {
             fully responsive websites, app design, and engaging brand
             experiences. Find out more about our services.
           </p>
-          <button>Learn More</button>
+          <button>
+            <Link to="/about-us" className="Link">
+              Learn More
+            </Link>
+          </button>
         </div>
 
         <div className="Home-img-wrap">
