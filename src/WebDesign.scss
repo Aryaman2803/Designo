@@ -91,9 +91,6 @@
     }
 
     .projects {
-      //   display: grid;
-      //   grid-template-columns: repeat(3, 25%);
-      //   justify-content: center;
       width: 80%;
       display: flex;
       flex-wrap: wrap;
@@ -111,7 +108,10 @@
       }
       #graphic-design {
         background: url("./starter/assets/home/desktop/image-graphic-design.jpg");
-        // height: 20rem;
+      }
+      #web-design {
+        background: url("./starter/assets/home/desktop/image-web-design-large.jpg");
+        margin-right: 2rem;
       }
     }
   }
