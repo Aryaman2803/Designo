@@ -56,5 +56,15 @@
         transform: translateX(-10%) rotate(180deg);
       }
     }
+
+    .other-projects {
+      #app-design {
+        background: url("./starter/assets/home/tablet/image-app-design.jpg");
+      }
+      #graphic-design {
+        background: url("./starter/assets/home/tablet/image-graphic-design.jpg");
+        height: 20rem;
+      }
+    }
   }
 }

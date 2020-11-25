@@ -7,12 +7,18 @@
   padding: 0 0 32px;
   border-radius: 15px;
   text-align: center;
-  background-color: #fdf3f0;
   margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   img {
     width: 100%;
     object-fit: contain;
     border-radius: 15px 15px 0 0;
+    padding: 0;
+    margin: 0;
   }
 
   h3 {
@@ -41,14 +47,35 @@
   }
 
   .text-wrap {
-    padding: 2rem;
+    padding: 2.5rem;
+    background-color: #fdf3f0;
+    margin-top: -0.6rem;
+    border-radius: 0 0 15px 15px;
   }
 }
 
 @media screen and (min-width: $tablet) {
   .Card {
-    display: flex;
+    flex-direction: row;
+    width: 689px;
+    height: 310px;
     align-items: center;
-    width: 40rem;
+    justify-content: center;
+
+    .text-wrap {
+      width: 689px;
+      height: 310px;
+      border-radius: 0 15px 15px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      width: 339px;
+      height: 310px;
+      border-radius: 15px 0 0 15px;
+    }
   }
 }
