@@ -1,6 +1,10 @@
 @import "./variables";
 
 .About {
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
   .hero {
     display: flex;
     flex-direction: column;
@@ -64,6 +68,7 @@
       margin-top: -0.7rem;
       position: relative;
       z-index: 5;
+      overflow: hidden;
       h2 {
         font-size: 3.2rem;
         color: $primaryColor;
@@ -157,6 +162,75 @@
       .img-wrap {
         background: url("./starter/assets/about/tablet/image-real-deal.jpg");
         background-size: 100% 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .About {
+    .hero {
+      flex-direction: row-reverse;
+      align-items: center;
+      width: 111rem;
+      height: 48rem;
+      .img-wrap {
+        height: 48rem;
+        object-fit: contain;
+        background: url("./starter/assets/about/desktop/image-about-hero.jpg");
+        border-radius: 0 15px 15px 0;
+        margin-top: -7px;
+      }
+      .hero-text {
+        height: 48rem;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 15px 0 0 15px;
+        img {
+          top: -50%;
+          transform: translateX(-60%);
+          width: 200rem;
+        }
+      }
+    }
+    .talent {
+      display: flex;
+      width: 111rem;
+      height: 64rem;
+      .img-wrap {
+        height: 64rem;
+        background: url("./starter/assets/about/desktop/image-world-class-talent.jpg");
+        border-radius: 15px 0 0 15px;
+        margin-top: -6px;
+      }
+      .talent-text {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        padding: 5rem 10rem;
+        border-radius: 0 15px 15px 0;
+        height: 64rem;
+      }
+    }
+    .locations {
+      flex-direction: row;
+      justify-content: space-around;
+      width: 111rem;
+      margin: 0 auto;
+      margin-bottom: 12rem;
+    }
+    #real {
+      flex-direction: row-reverse;
+      .img-wrap {
+        background: url("./starter/assets/about/desktop/image-real-deal.jpg");
+        background-size: 100% 100%;
+        border-radius: 0 15px 15px 0;
+      }
+      .talent-text {
+        border-radius: 15px 0 0 15px;
       }
     }
   }
