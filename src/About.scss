@@ -41,4 +41,34 @@
       }
     }
   }
+  .talent {
+    @extend .hero;
+    .talent-text {
+      text-align: center;
+      padding: 3rem 1rem;
+      background-color: #fdf3f0;
+      margin-top: -0.7rem;
+      position: relative;
+      z-index: 5;
+      h2 {
+        font-size: 3.2rem;
+        color: $primaryColor;
+        margin: 3rem 0rem;
+      }
+      p {
+        line-height: 1.67;
+      }
+      #last {
+        padding-bottom: 4rem;
+      }
+      img {
+        position: absolute;
+        top: -20%;
+        transform: translateX(-90%);
+        z-index: -4;
+        width: 110rem;
+        opacity: 0.3;
+      }
+    }
+  }
 }
