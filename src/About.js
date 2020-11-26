@@ -2,8 +2,14 @@ import React from "react";
 import NavBar from "./NavBar";
 import heroImage from "./starter/assets/about/mobile/image-about-hero.jpg";
 import talentImage from "./starter/assets/about/mobile/image-world-class-talent.jpg";
+import realImage from "./starter/assets/about/mobile/image-real-deal.jpg";
 import heroSvg from "./starter/assets/about/mobile/bg-pattern-hero-about-mobile.svg";
+import australia from "./starter/assets/shared/desktop/illustration-australia.svg";
+import canada from "./starter/assets/shared/desktop/illustration-canada.svg";
+import uk from "./starter/assets/shared/desktop/illustration-united-kingdom.svg";
 import "./About.scss";
+import Location from "./Location";
+import Footer from "./Footer";
 
 export default function About() {
   return (
@@ -48,6 +54,34 @@ export default function About() {
           </p>
         </div>
       </section>
+      <section className="locations">
+        <Location name="Canada" image={canada} />
+        <Location name="Australia" image={australia} />
+        <Location name="United Kingdom" image={uk} />
+      </section>
+      <section className="talent" id="real">
+        <div className="img-wrap">
+          <img src={realImage} alt="" />
+        </div>
+        <div className="talent-text">
+          <img src={heroSvg} alt="" />
+          <h2>The real deal</h2>
+          <p>
+            As strategic partners in our clients’ businesses, we are ready to
+            take on any challenge as our own. Solving real problems require
+            empathy and collaboration, and we strive to bring a fresh
+            perspective to every opportunity. We make design and technology more
+            accessible and give you tools to measure success.
+          </p>
+          <br />
+          <p id="last">
+            We are visual storytellers in appealing and captivating ways. By
+            combining business and marketing strategies, we inspire audiences to
+            take action and drive real results.
+          </p>
+        </div>
+      </section>
+      <Footer />
     </div>
   );
 }

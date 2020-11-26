@@ -71,4 +71,15 @@
       }
     }
   }
+  .locations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9rem;
+    margin-bottom: 9rem;
+  }
+  #real {
+    margin-bottom: 30rem;
+  }
 }
