@@ -2,6 +2,7 @@ import React from "react";
 import logoDark from "./starter/assets/shared/desktop/logo-dark.png";
 import { useMediaQuery } from "react-responsive";
 import "./Navbar.scss";
+import { Link } from "react-router-dom";
 export default function NavBar() {
   const isMobile = useMediaQuery({
     query: "(max-device-width: 767px)",
@@ -12,7 +13,9 @@ export default function NavBar() {
 
   return (
     <div className="Navbar">
-      <img src={logoDark} alt="" />
+      <Link to="/">
+        <img src={logoDark} alt="" />
+      </Link>
 
       <svg width="24" height="20" xmlns="http://www.w3.org/2000/svg">
         <g fill="#1D1C1E" fill-rule="evenodd">
@@ -21,9 +24,15 @@ export default function NavBar() {
       </svg>
 
       <ul>
-        <li>Our Company</li>
-        <li>Locations</li>
-        <li>Contact</li>
+        <li>
+          <Link to="/about-us">Our Company</Link>
+        </li>
+        <li>
+          <Link to="/locations">Locations</Link>
+        </li>
+        <li>
+          <Link to="contact">Contact</Link>
+        </li>
       </ul>
     </div>
   );

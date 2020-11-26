@@ -5,6 +5,7 @@ import WebDesign from "./WebDesign";
 import AppDesign from "./AppDesign";
 import GraphicDesign from "./GraphicDesign";
 import About from "./About";
+import Locations from "./Locations";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route exact path="/app-design" render={() => <AppDesign />} />
         <Route exact path="/graphic-design" render={() => <GraphicDesign />} />
         <Route exact path="/about-us" render={() => <About />} />
+        <Route exact path="/locations" render={() => <Locations />} />
         <Route exact path="/" component={Home} />
       </Switch>
     </div>

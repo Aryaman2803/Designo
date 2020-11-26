@@ -1,0 +1,17 @@
+.Locations {
+  .country {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .img-wrap {
+      background: url("./starter/assets/locations/desktop/image-map-canada.png");
+      height: 32rem;
+      width: 100vw;
+      object-fit: contain;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+}
