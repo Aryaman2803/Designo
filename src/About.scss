@@ -9,6 +9,11 @@
     width: 100vw;
     .img-wrap {
       width: 100vw;
+      height: 32rem;
+      background: url("./starter/assets/about/mobile/image-about-hero.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      object-fit: contain;
       img {
         width: 100%;
       }
@@ -42,7 +47,16 @@
     }
   }
   .talent {
-    @extend .hero;
+    // @extend .hero;
+    width: 100vw;
+    .img-wrap {
+      width: 100vw;
+      height: 32rem;
+      background: url("./starter/assets/about/mobile/image-world-class-talent.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      object-fit: contain;
+    }
     .talent-text {
       text-align: center;
       padding: 3rem 1rem;
@@ -81,5 +95,69 @@
   }
   #real {
     margin-bottom: 30rem;
+    .img-wrap {
+      background: url("./starter/assets/about/mobile/image-real-deal.jpg");
+      background-size: 100% 100%;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .About {
+    .hero {
+      width: 70rem;
+      margin: 0 auto;
+      border-radius: 15px;
+      margin-bottom: 12rem;
+      margin-top: 3rem;
+      .img-wrap {
+        height: 32rem;
+        width: 70rem;
+        background: url("./starter/assets/about/tablet/image-about-hero.jpg");
+        background-size: 100% 100%;
+        border-radius: 15px 15px 0 0;
+      }
+      .hero-text {
+        width: 100%;
+        border-radius: 0 0 15px 15px;
+        h2 {
+          font-size: 4.8rem;
+        }
+        p {
+          line-height: 1.63;
+        }
+      }
+    }
+    .talent {
+      width: 70rem;
+      margin: 0 auto;
+      border-radius: 15px;
+      margin-bottom: 12rem;
+      margin-top: 3rem;
+      .img-wrap {
+        height: 32rem;
+        width: 70rem;
+        background: url("./starter/assets/about/tablet/image-world-class-talent.jpg");
+        background-size: 100% 100%;
+        border-radius: 15px 15px 0 0;
+      }
+      .talent-text {
+        width: 100%;
+        border-radius: 0 0 15px 15px;
+        h2 {
+          font-size: 4.8rem;
+        }
+        p {
+          line-height: 1.63;
+        }
+      }
+    }
+    #real {
+      margin-bottom: 30rem;
+      .img-wrap {
+        background: url("./starter/assets/about/tablet/image-real-deal.jpg");
+        background-size: 100% 100%;
+      }
+    }
   }
 }

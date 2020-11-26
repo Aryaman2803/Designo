@@ -16,9 +16,7 @@ export default function About() {
     <div className="About">
       <NavBar />
       <section className="hero">
-        <div className="img-wrap">
-          <img src={heroImage} alt="" />
-        </div>
+        <div className="img-wrap">{/* <img src={heroImage} alt="" /> */}</div>
         <div className="hero-text">
           <img src={heroSvg} alt="" />
           <h2>About Us</h2>
@@ -32,9 +30,7 @@ export default function About() {
         </div>
       </section>
       <section className="talent">
-        <div className="img-wrap">
-          <img src={talentImage} alt="" />
-        </div>
+        <div className="img-wrap">{/* <img src={talentImage} alt="" /> */}</div>
         <div className="talent-text">
           <img src={heroSvg} alt="" />
           <h2>World-class talent</h2>
@@ -60,9 +56,7 @@ export default function About() {
         <Location name="United Kingdom" image={uk} />
       </section>
       <section className="talent" id="real">
-        <div className="img-wrap">
-          <img src={realImage} alt="" />
-        </div>
+        <div className="img-wrap">{/* <img src={realImage} alt="" /> */}</div>
         <div className="talent-text">
           <img src={heroSvg} alt="" />
           <h2>The real deal</h2>
