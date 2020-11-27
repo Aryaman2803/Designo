@@ -2,6 +2,11 @@ import React from "react";
 import NavBar from "./NavBar";
 import "./Contact.scss";
 import circles from "./starter/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg";
+import Location from "./Location";
+import australia from "./starter/assets/shared/desktop/illustration-australia.svg";
+import canada from "./starter/assets/shared/desktop/illustration-canada.svg";
+import uk from "./starter/assets/shared/desktop/illustration-united-kingdom.svg";
+import Footer from "./Footer";
 
 export default function Contact() {
   return (
@@ -37,6 +42,12 @@ export default function Contact() {
           </form>
         </div>
       </section>
+      <section className="locations">
+        <Location name="Canada" image={canada} />
+        <Location name="Australia" image={australia} />
+        <Location name="United Kingdom" image={uk} />
+      </section>
+      <Footer showContact={false} />
     </div>
   );
 }

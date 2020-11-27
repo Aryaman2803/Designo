@@ -8,7 +8,7 @@ import youtube from "./starter/assets/shared/desktop/icon-youtube.svg";
 import circles from "./starter/assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg";
 import { useMediaQuery } from "react-responsive";
 import "./Footer.scss";
-export default function Footer() {
+export default function Footer(props) {
   const isMobile = useMediaQuery({
     query: "(max-device-width: 600px)",
   });
@@ -17,21 +17,30 @@ export default function Footer() {
   });
 
   return (
-    <div className="Footer">
-      <div className="Footer-contact">
-        <img src={circles} alt="circles" />
-        <div className="contact-text-wrap">
-          <div className="div">
-            <h2>Let's talk about your project</h2>
-            <p>
-              Ready to take it to the next level? Contact us today and find out
-              how our expertise can help your business grow.
-            </p>
-          </div>
+    <div
+      className="Footer"
+      style={{
+        paddingTop: props.showContact ? "30rem" : "10rem",
+        marginTop: props.showContact ? "20rem" : "10rem",
+      }}
+    >
+      {props.showContact && (
+        <div className="Footer-contact">
+          <img src={circles} alt="circles" />
+          <div className="contact-text-wrap">
+            <div className="div">
+              <h2>Let's talk about your project</h2>
+              <p>
+                Ready to take it to the next level? Contact us today and find
+                out how our expertise can help your business grow.
+              </p>
+            </div>
 
-          <button>Get in Touch</button>
+            <button>Get in Touch</button>
+          </div>
         </div>
-      </div>
+      )}
+
       <div className="Footer-content">
         {isMobile && (
           <>

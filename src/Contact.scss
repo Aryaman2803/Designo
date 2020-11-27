@@ -8,6 +8,7 @@
     position: relative;
     overflow: hidden;
     z-index: 4;
+    margin-bottom: 12rem;
     img {
       position: absolute;
       left: -30%;
@@ -79,5 +80,12 @@
         font-weight: 500;
       }
     }
+  }
+  .locations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0rem;
   }
 }
