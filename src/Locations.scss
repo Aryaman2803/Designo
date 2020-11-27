@@ -51,6 +51,18 @@
   }
   #uk {
     padding-bottom: 12rem;
+    .img-wrap {
+      background: url("./starter/assets/locations/desktop/image-map-united-kingdom.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+  #australia {
+    .img-wrap {
+      background: url("./starter/assets/locations/desktop/image-map-australia.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
   }
 }
 
@@ -84,6 +96,65 @@
             text-align: left;
           }
         }
+      }
+    }
+    #uk {
+      padding-bottom: 12rem;
+      .img-wrap {
+        background: url("./starter/assets/locations/tablet/image-map-uk.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+    #australia {
+      .img-wrap {
+        background: url("./starter/assets/locations/tablet/image-map-australia.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .Locations {
+    .country {
+      width: 100rem;
+      flex-direction: row-reverse;
+      align-items: center;
+      .img-wrap {
+        background: url("./starter/assets/locations/desktop/image-map-canada.png");
+        width: 35rem;
+        height: 32.6rem;
+        &:first-child {
+          margin-left: 3rem;
+          margin-bottom: 0;
+        }
+      }
+      .text-wrap {
+        width: 73rem;
+        height: 32.6rem;
+      }
+      &:nth-child(3) {
+        flex-direction: row;
+        .img-wrap {
+          margin-right: 3rem;
+        }
+      }
+    }
+    #uk {
+      padding-bottom: 12rem;
+      .img-wrap {
+        background: url("./starter/assets/locations/desktop/image-map-united-kingdom.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+    #australia {
+      .img-wrap {
+        background: url("./starter/assets/locations/desktop/image-map-australia.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
       }
     }
   }

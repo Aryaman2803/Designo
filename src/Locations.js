@@ -8,7 +8,7 @@ export default function Locations() {
   return (
     <div className="Locations">
       <NavBar />
-      <section className="country">
+      <section className="country" id="canada">
         <div className="img-wrap"></div>
         <div className="text-wrap">
           <img src={heroSvg} alt="" />
@@ -28,7 +28,7 @@ export default function Locations() {
           </div>
         </div>
       </section>
-      <section className="country">
+      <section className="country" id="australia">
         <div className="img-wrap"></div>
         <div className="text-wrap">
           <img src={heroSvg} alt="" />
