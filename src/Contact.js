@@ -1,9 +1,10 @@
 import React from "react";
 import NavBar from "./NavBar";
+import "./Contact.scss";
 
 export default function Contact() {
   return (
-    <div>
+    <div className="Contact">
       <NavBar />
       <section className="form">
         <h2>Contact Us</h2>
@@ -14,7 +15,21 @@ export default function Contact() {
           drop us a line.
         </p>
         <form action="">
-          <input type="text" placeholder="Name" name="name" />
+          <input type="text" placeholder="Name" name="name" id="name" />
+          <input
+            type="email"
+            placeholder="Email Address"
+            name="email"
+            id="email"
+          />
+          <input type="text" placeholder="Phone" name="phone" id="phone" />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+          ></textarea>
         </form>
       </section>
     </div>
