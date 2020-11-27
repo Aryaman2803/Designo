@@ -2,13 +2,25 @@
 .Contact {
   .form {
     width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: $primaryColor;
     color: $white;
-    padding: 3rem 1rem;
+    padding: 7rem 1rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 4;
+    img {
+      position: absolute;
+      left: -30%;
+      top: 0%;
+      z-index: -2;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 2.4rem;
+    }
     h2 {
       font-size: 3.2rem;
       font-weight: 500;
@@ -24,10 +36,47 @@
     form {
       display: flex;
       flex-direction: column;
-
-      input {
+      justify-content: center;
+      align-items: center;
+      input,
+      textarea {
         font-family: $fontStack;
         font-size: 1.6rem;
+        width: 37rem;
+        padding: 1rem;
+        border: none;
+        margin-bottom: 1rem;
+        background-color: inherit;
+        border-bottom: 1px solid white;
+        &::-webkit-input-placeholder {
+          color: $white;
+          opacity: 0.5;
+        }
+        &::-ms-input-placeholder {
+          color: $white;
+          opacity: 0.5;
+        }
+        &::-moz-placeholder {
+          color: $white;
+          opacity: 0.5;
+        }
+        &::-moz-placeholder {
+          color: $white;
+          opacity: 0.5;
+        }
+      }
+      button {
+        width: 15.2rem;
+        height: 5.6rem;
+        margin: 40px 87px 0 88px;
+        padding: 18px 47px 16px 48px;
+        border-radius: 8px;
+        background-color: $white;
+        border: none;
+        font-family: $fontStack;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-weight: 500;
       }
     }
   }
