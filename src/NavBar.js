@@ -31,7 +31,7 @@ export default function NavBar() {
           <Link to="/locations">Locations</Link>
         </li>
         <li>
-          <Link to="contact">Contact</Link>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
     </div>
