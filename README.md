@@ -13,7 +13,7 @@ A multipage website built using Reactjs and Saas. This was a great project to sh
 a lot more comfortable using svgs in my projects
 
 ## Screenshots
-[![screenshot.png](https://i.postimg.cc/wT9dk888/screenshot.png)](https://postimg.cc/CdrtF2xm)
+[![Screenshot-2020-11-28-153736.png](https://i.postimg.cc/RZwhc2V0/Screenshot-2020-11-28-153736.png)](https://postimg.cc/75Yq4szv)
 
 ## Technologies
 * ReactJs
