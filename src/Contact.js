@@ -15,31 +15,35 @@ export default function Contact() {
       <section className="form">
         <div className="container">
           <img src={circles} alt="" />
-          <h2>Contact Us</h2>
-          <p>
-            Ready to take it to the next level? Let’s talk about your project or
-            idea and find out how we can help your business grow. If you are
-            looking for unique digital experiences that’s relatable to your
-            users, drop us a line.
-          </p>
-          <form action="">
-            <input type="text" placeholder="Name" name="name" id="name" />
-            <input
-              type="email"
-              placeholder="Email Address"
-              name="email"
-              id="email"
-            />
-            <input type="text" placeholder="Phone" name="phone" id="phone" />
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="5"
-              placeholder="Your Message"
-            ></textarea>
-            <button type="submit">Submit</button>
-          </form>
+          <div className="text-wrap">
+            <h2>Contact Us</h2>
+            <p>
+              Ready to take it to the next level? Let’s talk about your project
+              or idea and find out how we can help your business grow. If you
+              are looking for unique digital experiences that’s relatable to
+              your users, drop us a line.
+            </p>
+          </div>
+          <div className="">
+            <form action="">
+              <input type="text" placeholder="Name" name="name" id="name" />
+              <input
+                type="email"
+                placeholder="Email Address"
+                name="email"
+                id="email"
+              />
+              <input type="text" placeholder="Phone" name="phone" id="phone" />
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="5"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
         </div>
       </section>
       <section className="locations">
