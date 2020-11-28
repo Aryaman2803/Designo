@@ -19,7 +19,7 @@ a lot more comfortable using svgs in my projects
 ## Technologies
 * ReactJs
 * CSS
-* SAAS
+* Sass
 
 ## Setup
 ```
