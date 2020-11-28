@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import Card from "./Card";
 import NavBar from "./NavBar";
 import { useMediaQuery } from "react-responsive";
-import { Link } from "react-router-dom";
 import headerCircle from "./starter/assets/home/desktop/bg-pattern-hero-home.svg";
 import multipleCircles from "./starter/assets/web-design/desktop/bg-pattern-intro-web.svg";
 import express from "./starter/assets/web-design/desktop/image-express.jpg";
