@@ -25,24 +25,25 @@
     margin: 14px 0 0;
   }
   button {
+    border: none;
+    font-family: $fontStack;
     width: 15.2rem;
     height: 5.6rem;
-    margin: 24px 87px 0 88px;
+    margin: 32px 63px 0 64px;
     border-radius: 8px;
-    border: none;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    font-family: $fontStack;
-    font-weight: 500;
-    letter-spacing: 1px;
     background-color: $white;
     color: $black;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
     transition: all 0.3s;
     cursor: pointer;
+    margin-bottom: 10rem;
 
     &:hover {
       background-color: $secondaryColor;
-      color: $white;
+      color: white;
     }
   }
 
