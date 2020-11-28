@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import logoDark from "./starter/assets/shared/desktop/logo-dark.png";
 import { useMediaQuery } from "react-responsive";
 import "./styles/scss/Navbar.scss";
 import { Link } from "react-router-dom";
+import Navbar from "react-bootstrap/Navbar";
 export default function NavBar() {
+  const [open, setOpen] = useState(false);
+
   const isMobile = useMediaQuery({
     query: "(max-device-width: 767px)",
   });
@@ -11,35 +14,34 @@ export default function NavBar() {
     query: "(min-device-width:768px)",
   });
 
+  const openMenu = () => {
+    setOpen(!open);
+  };
+
   return (
-    <div className="Navbar">
-      <Link to="/">
-        <img src={logoDark} alt="" />
-      </Link>
-
-      <svg width="24" height="20" xmlns="http://www.w3.org/2000/svg">
-        <g fill="#1D1C1E" fill-rule="evenodd">
-          <path d="M0 0h24v4H0zM0 8h24v4H0zM0 16h24v4H0z" />
-        </g>
-      </svg>
-
-      <ul>
-        <li>
-          <Link to="/about-us" className="NavLink">
-            Our Company
-          </Link>
-        </li>
-        <li>
-          <Link to="/locations" className="NavLink">
-            Locations
-          </Link>
-        </li>
-        <li>
-          <Link to="/contact" className="NavLink">
-            Contact
-          </Link>
-        </li>
-      </ul>
+    <div className="">
+      <div className="Navbar">
+        <Link to="/">
+          <img src={logoDark} alt="" />
+        </Link>
+        <ul>
+          <li>
+            <Link to="/about-us" className="NavLink">
+              Our Company
+            </Link>
+          </li>
+          <li>
+            <Link to="/locations" className="NavLink">
+              Locations
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" className="NavLink">
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }

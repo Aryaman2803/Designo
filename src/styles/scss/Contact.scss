@@ -5,6 +5,7 @@
     background-color: $primaryColor;
     color: $white;
     padding: 7rem 1rem;
+    text-align: center;
     position: relative;
     overflow: hidden;
     z-index: 4;
@@ -20,7 +21,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin: 0 2.4rem;
+      // margin: 0 2.4rem;
     }
     h2 {
       font-size: 3.2rem;
