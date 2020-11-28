@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <div className="Home">
       <NavBar />
-      {/* <img src={leaf} alt="" id="leaf1" /> <img src={leaf} alt="" id="leaf2" /> */}
+      <img src={leaf} alt="" id="leaf1" /> <img src={leaf} alt="" id="leaf2" />
       <section className="Home-landing">
         <div className="landing-wrap">
           <h2>Award-winning custom designs and digital branding solutions</h2>
