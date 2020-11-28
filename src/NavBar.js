@@ -1,7 +1,7 @@
 import React from "react";
 import logoDark from "./starter/assets/shared/desktop/logo-dark.png";
 import { useMediaQuery } from "react-responsive";
-import "./Navbar.scss";
+import "./styles/scss/Navbar.scss";
 import { Link } from "react-router-dom";
 export default function NavBar() {
   const isMobile = useMediaQuery({
@@ -25,13 +25,19 @@ export default function NavBar() {
 
       <ul>
         <li>
-          <Link to="/about-us">Our Company</Link>
+          <Link to="/about-us" className="NavLink">
+            Our Company
+          </Link>
         </li>
         <li>
-          <Link to="/locations">Locations</Link>
+          <Link to="/locations" className="NavLink">
+            Locations
+          </Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact" className="NavLink">
+            Contact
+          </Link>
         </li>
       </ul>
     </div>

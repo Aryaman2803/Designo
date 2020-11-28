@@ -1,4 +1,4 @@
-import "./App.scss";
+import "./styles/scss/App.scss";
 import Home from "./Home";
 import { Switch, Route } from "react-router-dom";
 import WebDesign from "./WebDesign";

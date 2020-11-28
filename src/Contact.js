@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "./NavBar";
-import "./Contact.scss";
+import "./styles/scss/Contact.scss";
 import circles from "./starter/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg";
 import Location from "./Location";
 import australia from "./starter/assets/shared/desktop/illustration-australia.svg";
@@ -9,6 +9,9 @@ import uk from "./starter/assets/shared/desktop/illustration-united-kingdom.svg"
 import Footer from "./Footer";
 
 export default function Contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="Contact">
       <NavBar />

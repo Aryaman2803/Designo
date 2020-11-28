@@ -8,7 +8,7 @@
     justify-content: center;
     margin-bottom: 4rem;
     .img-wrap {
-      background: url("./starter/assets/locations/desktop/image-map-canada.png");
+      background: url("../../starter/assets/locations/desktop/image-map-canada.png");
       height: 32rem;
       width: 100%;
       object-fit: contain;
@@ -52,14 +52,14 @@
   #uk {
     padding-bottom: 12rem;
     .img-wrap {
-      background: url("./starter/assets/locations/desktop/image-map-united-kingdom.png");
+      background: url("../../starter/assets/locations/desktop/image-map-united-kingdom.png");
       background-repeat: no-repeat;
       background-size: 100% 100%;
     }
   }
   #australia {
     .img-wrap {
-      background: url("./starter/assets/locations/desktop/image-map-australia.png");
+      background: url("../../starter/assets/locations/desktop/image-map-australia.png");
       background-repeat: no-repeat;
       background-size: 100% 100%;
     }
@@ -76,7 +76,7 @@
       }
       .img-wrap {
         border-radius: 1.5rem;
-        background: url("./starter/assets/locations/tablet/image-map-canada.png");
+        background: url("../../starter/assets/locations/tablet/image-map-canada.png");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         &:first-child {
@@ -101,14 +101,14 @@
     #uk {
       padding-bottom: 12rem;
       .img-wrap {
-        background: url("./starter/assets/locations/tablet/image-map-uk.png");
+        background: url("../../starter/assets/locations/tablet/image-map-uk.png");
         background-repeat: no-repeat;
         background-size: 100% 100%;
       }
     }
     #australia {
       .img-wrap {
-        background: url("./starter/assets/locations/tablet/image-map-australia.png");
+        background: url("../../starter/assets/locations/tablet/image-map-australia.png");
         background-repeat: no-repeat;
         background-size: 100% 100%;
       }
@@ -123,7 +123,7 @@
       flex-direction: row-reverse;
       align-items: center;
       .img-wrap {
-        background: url("./starter/assets/locations/desktop/image-map-canada.png");
+        background: url("../../starter/assets/locations/desktop/image-map-canada.png");
         width: 35rem;
         height: 32.6rem;
         &:first-child {
@@ -146,14 +146,14 @@
     #uk {
       padding-bottom: 12rem;
       .img-wrap {
-        background: url("./starter/assets/locations/desktop/image-map-united-kingdom.png");
+        background: url("../../starter/assets/locations/desktop/image-map-united-kingdom.png");
         background-repeat: no-repeat;
         background-size: 100% 100%;
       }
     }
     #australia {
       .img-wrap {
-        background: url("./starter/assets/locations/desktop/image-map-australia.png");
+        background: url("../../starter/assets/locations/desktop/image-map-australia.png");
         background-repeat: no-repeat;
         background-size: 100% 100%;
       }

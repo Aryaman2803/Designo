@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Card from "./Card";
 import NavBar from "./NavBar";
 import { useMediaQuery } from "react-responsive";
@@ -9,11 +9,14 @@ import eyecam from "./starter/assets/app-design/desktop/image-eyecam.jpg";
 import faceit from "./starter/assets/app-design/desktop/image-faceit.jpg";
 import loop from "./starter/assets/app-design/desktop/image-loopstudios.jpg";
 import todo from "./starter/assets/app-design/desktop/image-todo.jpg";
-import "./WebDesign.scss";
+import "./styles/scss/WebDesign.scss";
 import Project from "./Project";
 import Footer from "./Footer";
 
 export default function WebDesign() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const isTabletOrDesktop = useMediaQuery({
     query: "(min-device-width:768px)",
   });
@@ -67,7 +70,7 @@ export default function WebDesign() {
         <Project name="Web Design" id="web-design" />
         <Project name="Graphic Design" id="graphic-design" />
       </section>
-      <Footer />
+      <Footer showContact={true} />
     </div>
   );
 }

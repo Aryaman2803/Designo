@@ -1,5 +1,10 @@
 @import "./variables";
 
+.NavLink {
+  color: black;
+  text-decoration: none;
+}
+
 .Navbar {
   display: flex;
   align-items: center;

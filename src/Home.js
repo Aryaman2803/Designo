@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "./NavBar";
 import phoneImage from "./starter/assets/home/desktop/image-hero-phone.png";
 import passionate from "./starter/assets/home/desktop/illustration-passionate.svg";
@@ -6,12 +6,15 @@ import resourceful from "./starter/assets/home/desktop/illustration-resourceful.
 import friendly from "./starter/assets/home/desktop/illustration-friendly.svg";
 import leaf from "./starter/assets/shared/desktop/bg-pattern-leaf.svg";
 import { useMediaQuery } from "react-responsive";
-import "./Home.scss";
+import "./styles/scss/Home.scss";
 import Project from "./Project";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const isDesktop = useMediaQuery({
     query: "(min-device-width: 1220px)",
   });
@@ -166,7 +169,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Footer />
+      <Footer showContact={true} />
     </div>
   );
 }

@@ -1,17 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "./NavBar";
-import heroImage from "./starter/assets/about/mobile/image-about-hero.jpg";
-import talentImage from "./starter/assets/about/mobile/image-world-class-talent.jpg";
-import realImage from "./starter/assets/about/mobile/image-real-deal.jpg";
 import heroSvg from "./starter/assets/about/mobile/bg-pattern-hero-about-mobile.svg";
 import australia from "./starter/assets/shared/desktop/illustration-australia.svg";
 import canada from "./starter/assets/shared/desktop/illustration-canada.svg";
 import uk from "./starter/assets/shared/desktop/illustration-united-kingdom.svg";
-import "./About.scss";
+import "./styles/scss/About.scss";
 import Location from "./Location";
 import Footer from "./Footer";
 
 export default function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="About">
       <NavBar />
@@ -75,7 +75,7 @@ export default function About() {
           </p>
         </div>
       </section>
-      <Footer />
+      <Footer showContact={true} />
     </div>
   );
 }

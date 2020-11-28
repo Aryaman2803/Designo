@@ -1,4 +1,12 @@
 @import "./variables";
+
+.footer-nav {
+  .FooterLink {
+    color: white;
+    text-decoration: none;
+  }
+}
+
 .Footer {
   display: flex;
   flex-direction: column;
@@ -25,6 +33,10 @@
   overflow: hidden;
   top: -24%;
   //   transform: translateX(-50%);
+  .FooterLink {
+    text-decoration: none;
+    color: black;
+  }
   h2 {
     margin: 0 0 20px;
     font-size: 3.2rem;
@@ -55,7 +67,7 @@
 
     &:hover {
       background-color: $secondaryColor;
-      color: $white;
+      color: white;
     }
   }
 

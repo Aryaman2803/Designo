@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "./NavBar";
 import heroSvg from "./starter/assets/about/mobile/bg-pattern-hero-about-mobile.svg";
-import "./Locations.scss";
+import "./styles/scss/Locations.scss";
 import Footer from "./Footer";
 
 export default function Locations() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="Locations">
       <NavBar />
@@ -68,7 +71,7 @@ export default function Locations() {
           </div>
         </div>
       </section>
-      <Footer />
+      <Footer showContact={true} />
     </div>
   );
 }

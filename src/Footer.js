@@ -7,7 +7,8 @@ import twitter from "./starter/assets/shared/desktop/icon-twitter.svg";
 import youtube from "./starter/assets/shared/desktop/icon-youtube.svg";
 import circles from "./starter/assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg";
 import { useMediaQuery } from "react-responsive";
-import "./Footer.scss";
+import "./styles/scss/Footer.scss";
+import { Link } from "react-router-dom";
 export default function Footer(props) {
   const isMobile = useMediaQuery({
     query: "(max-device-width: 600px)",
@@ -36,7 +37,11 @@ export default function Footer(props) {
               </p>
             </div>
 
-            <button>Get in Touch</button>
+            <button>
+              <Link to="/contact" className="FooterLink">
+                Get in Touch
+              </Link>
+            </button>
           </div>
         </div>
       )}
@@ -58,9 +63,21 @@ export default function Footer(props) {
             <div className="footer-nav">
               <img src={logoLight} alt="" />
               <ul>
-                <li>Our Company</li>
-                <li>Locations</li>
-                <li>Contact</li>
+                <li>
+                  <Link to="/about-us" className="FooterLink">
+                    Our Company
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/locations" className="FooterLink">
+                    Locations
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="FooterLink">
+                    Contact
+                  </Link>
+                </li>
               </ul>
             </div>
 

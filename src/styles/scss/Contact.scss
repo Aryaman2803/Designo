@@ -49,6 +49,7 @@
         margin-bottom: 1rem;
         background-color: inherit;
         border-bottom: 1px solid white;
+        color: white;
         &::-webkit-input-placeholder {
           color: $white;
           opacity: 0.5;
@@ -65,6 +66,11 @@
           color: $white;
           opacity: 0.5;
         }
+        &:focus {
+          border: none;
+          outline: none;
+          border-bottom: 2px solid white;
+        }
       }
       button {
         width: 15.2rem;
@@ -78,6 +84,12 @@
         font-size: 1.6rem;
         text-transform: uppercase;
         font-weight: 500;
+        transition: all 0.3s;
+        cursor: pointer;
+        &:hover {
+          background-color: $secondaryColor;
+          color: white;
+        }
       }
     }
   }

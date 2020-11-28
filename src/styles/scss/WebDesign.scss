@@ -66,10 +66,10 @@
 
     .other-projects {
       #app-design {
-        background: url("./starter/assets/home/tablet/image-app-design.jpg");
+        background: url("../../starter/assets/home/tablet/image-app-design.jpg");
       }
       #graphic-design {
-        background: url("./starter/assets/home/tablet/image-graphic-design.jpg");
+        background: url("../../starter/assets/home/tablet/image-graphic-design.jpg");
         height: 20rem;
       }
     }
@@ -103,14 +103,14 @@
       flex-direction: row;
       height: 30.8rem;
       #app-design {
-        background: url("./starter/assets/home/desktop/image-app-design.jpg");
+        background: url("../../starter/assets/home/desktop/image-app-design.jpg");
         margin-right: 2rem;
       }
       #graphic-design {
-        background: url("./starter/assets/home/desktop/image-graphic-design.jpg");
+        background: url("../../starter/assets/home/desktop/image-graphic-design.jpg");
       }
       #web-design {
-        background: url("./starter/assets/home/desktop/image-web-design-large.jpg");
+        background: url("../../starter/assets/home/desktop/image-web-design-large.jpg");
         margin-right: 2rem;
       }
     }
