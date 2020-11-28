@@ -5,7 +5,6 @@ import passionate from "./starter/assets/home/desktop/illustration-passionate.sv
 import resourceful from "./starter/assets/home/desktop/illustration-resourceful.svg";
 import friendly from "./starter/assets/home/desktop/illustration-friendly.svg";
 import leaf from "./starter/assets/shared/desktop/bg-pattern-leaf.svg";
-import { useMediaQuery } from "react-responsive";
 import "./styles/scss/Home.scss";
 import Project from "./Project";
 import Footer from "./Footer";
@@ -15,9 +14,6 @@ export default function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const isDesktop = useMediaQuery({
-    query: "(min-device-width: 1220px)",
-  });
   return (
     <div className="Home">
       <NavBar />
